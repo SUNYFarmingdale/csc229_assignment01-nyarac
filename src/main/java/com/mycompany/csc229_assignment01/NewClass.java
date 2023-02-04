@@ -11,6 +11,6 @@ package com.mycompany.csc229_assignment01;
         course.setName("Psychology");
         course.setCode("PSY101");
         course.setID(4321);  
-      System.out.println("Name: " + course.getName() + " Code: " + course.getCode() + "ID: " + course.getID());
+      System.out.println("Name: " + course.getName() + " Code: " + course.getCode() + " ID: " + course.getID());
     }  
 }
