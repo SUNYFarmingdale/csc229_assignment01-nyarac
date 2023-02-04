@@ -3,10 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
  */
 package com.mycompany.csc229_assignment01;
-
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
 /**
  *
  * @author MoaathAlrajab
@@ -45,10 +43,10 @@ public class CourseTest {
     
         @Test
     public void testSomeMethod5() {
-        Course cr2= new Course(12012, "Moaath", "CSC229");
+        Course cr2= new Course("Moaath", "CSC229", 12012);
         
             assertNotNull(cr2);
     }
     
-    
+  
 }

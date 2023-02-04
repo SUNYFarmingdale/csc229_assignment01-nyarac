@@ -1,37 +1,41 @@
-/*
-* ToDo 01:
- Complete the followings:
-
-The Course class should have:
-
-    - ID 
-
-    - Name
-
-    - Code
-
- - You need to have setters and getters for all data members
- - You must have a default constructor and an overloaded one that accepts 3 parameters to update the member variables.
-
- - Using a driver class (with main), instantiate the Course class and call its methods to change the id, name, and code.
-
- - Test and run your code.
-
- - Add comments to explain your program.
-
- - Push the code to GitHub.
-
- - Submit the Github link here (make sure it is a public repo).
-
-
- */
-
 package com.mycompany.csc229_assignment01;
+// @author MoaathAlrajab
 
-/**
- *
- * @author MoaathAlrajab
- */
 public class Course {
+    private String Name; //declaration of the necessary variables 
+    private String Code; 
+    private int ID;
+    
+public Course () { //default constructor 
+}
 
+public void setName(String Name) { //setter for Name
+    this.Name = Name;
+}
+
+public String getName() { //getter for Name
+    return Name;
+}
+
+public void setCode(String Code) { //setter for Code
+    this.Code = Code;
+}
+
+public String getCode() { //getter for Code 
+    return Code;
+}
+
+public void setID(int ID) { //setter for ID 
+    this.ID = ID; 
+}
+
+public int getID() { //getter for ID 
+    return ID; 
+}
+
+public Course (String Name, String Code, int ID) { //overload constructor that updates the variables
+    this.Name = Name;
+    this.Code = Code; 
+    this.ID = ID;
+  } 
 }
