@@ -12,11 +12,19 @@ import static org.junit.jupiter.api.Assertions.*;
 public class CourseTest {
     
     Course crs;
+
+    /**
+     *
+     */
     public CourseTest() {
         crs= new Course();
     }
 
     //Test setter
+
+    /**
+     *
+     */
     @Test
     public void testSomeMethod1() {
         crs.setName("Moaath");
@@ -26,27 +34,39 @@ public class CourseTest {
     }
     
     //Test setter
+
+    /**
+     *
+     */
         @Test
     public void testSomeMethod2() {
             assertEquals("Moaath", crs.getName());
     }
     
-        @Test
+    /**
+     *
+     */
+    @Test
     public void testSomeMethod3() {
         assertEquals("CSC229", crs.getCode());
     }
     
-        @Test
+    /**
+     *
+     */
+    @Test
     public void testSomeMethod4() {
         assertEquals(12012, crs.getID());
     }
     
-        @Test
+    /**
+     *
+     */
+    @Test
     public void testSomeMethod5() {
         Course cr2= new Course("Moaath", "CSC229", 12012);
         
             assertNotNull(cr2);
     }
-    
-  
+ 
 }
